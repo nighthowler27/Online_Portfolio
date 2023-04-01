@@ -1,0 +1,68 @@
+.wrapper {
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(550px 550px 250px );
+    grid-gap: 5px;
+}
+
+/* ---Left Side start here */
+.left_side {
+    background-color: brown;
+    width: 500px;
+    height: auto;
+    grid-column-start: 1;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    grid-template-rows: 3;
+}
+
+.left_side profile_pic add_info {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin: 20px;
+}
+
+.profile_pic {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+
+.add_info {
+    background-color: cornsilk;
+    width: 450px;
+    height: 330px;
+}
+
+
+
+/* --end of left side--- */
+
+
+/* ---Right Side start Here--- */
+.right_side {
+    background-color: chartreuse;
+    grid-column-start: 3;
+    grid-template-columns: 6;
+    grid-template-rows: 1;
+    grid-template-rows: 3;
+}
+/* ---end of right side--- */
+
+
+/* ---start of footer--- */
+.footer {
+    background-color: coral;
+    grid-column-start: 1;
+    grid-template-columns: 6;
+    grid-template-rows: 2;
+    grid-template-rows: 3;
+}
+/* ---end of footer--- */
