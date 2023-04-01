@@ -129,3 +129,75 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
 }
+
+
+/* --right side content */
+.right {
+    position: absolute;
+    right: 8%;
+    bottom: 20%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.right .box .image img {
+    width: 70%;
+} 
+
+.image {
+    margin-top: 2rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 17px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.image:hover {
+    background-color: rgba(73, 66, 52, 0.7);
+}
+
+.box .inner-box {
+    margin: 1.5rem 0 0 1rem;
+}
+
+.box .inner-box p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* --social media links icons */
+.social-links {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.social-links::before{
+    content: "";
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    top: 42%;
+    left: -210px;
+    background-color: #494234;
+}
+
+.social-links i {
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #C8EBB1;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.social-links i:hover {
+    transform: translateY(-10px);
+}
