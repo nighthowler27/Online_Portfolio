@@ -6,10 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <link
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="../css/portfolio_page.css">
 
 </head>
 <body>
-    
+    <div class="container">
+        <!-- right side -->
+        <div class="right_portion">
+
+        </div>
+        <!-- end of right side -->
+
+        <!-- navbar -->
+        <nav>
+            <ul>
+                <img src="logo.svg" alt="logo.svg">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Photography</a></li>
+                <li><a href="#">Videography</a></li>
+                <li><a href="#">Graphic Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">3D</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+        <!-- end of navbar -->
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <!-- Swiper -->
+            <div class="image-slider">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/Online_Portfolio/img/eaglescout_custom_2011.jpg" alt="img.jpg"></div>
+                        <div class="swiper-slide"><img src="/Online_Portfolio/img/eaglescout_youthpatch_g.jpg" alt="img.jpg"></div>
+                        <div class="swiper-slide"><img src="/Online_Portfolio/img/eaglescout_youthpatch_g1992.jpg" alt="img.jpg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-text">
+
+                <h1>CABS Creative Studio</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nulla sunt at necessitatibus animi quidem.</p>
+                <button>Know More</button>
+            </div>
+        </div>
+
+        <!-- right side -->
+        <div class="right">
+            <div class="box">
+                <div class="image">
+                    <img src="img.jpg" alt="img.jpg">
+                </div>
+                <div class="inner-box">
+                    <h3>100% GOOD</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img.jpg" alt="img.jpg">
+                </div>
+                <div class="inner-box">
+                    <h3>100% GOOD</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img.jpg" alt="img.jpg">
+                </div>
+                <div class="inner-box">
+                    <h3>100% GOOD</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Links/Icons -->
+        <div class="social-links">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper =new Swiper(",.mySwiper",{
+            slidesPreview:1,
+            spaceBetween: 30,
+            loop:true,
+        });
+    </script>
 </body>
 </html>
