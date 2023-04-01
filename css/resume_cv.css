@@ -7,8 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {~
-    background-color: #666;
+body {
+    background-color: #393D3F;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body {~
     width: 100%;
     max-width: 1000px;
     min-height: 1000px;
-    background-color: #fff;
+    background-color: #FDFDFF;
     margin: 50px ;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -30,7 +30,12 @@ body {~
 /* ---Left Side start here */
 .wrapper .left_side {
     position: relative;
-    background-color: #003147;
+    /* background-color: #546A7B; */
+    /* background-image: url(https://source.unsplash.com/2000x3000/?foggy); */
+    background-image: url(/Online_Portfolio/img/fog_bg2.jpg);
+    background-size: cover;
+    background-blend-mode: lighten;
+    width: 350px;
     padding: 30px;
 }
 
@@ -104,12 +109,16 @@ body {~
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: #03a9f4;
+    color: #C6C5B9;
 }
 
 .contactInfo ul li span {
     color: #fff;
     font-weight: 300;
+}
+
+.additional_text {
+    margin-left: 33px;
 }
 
 
@@ -119,7 +128,7 @@ body {~
 }
 
 .contactInfo.education h5 {
-    color: #03a9f4;
+    color: #C6C5B9;
     font-weight: 500;
 }
 
@@ -148,15 +157,43 @@ body {~
     top: 0;
     left: 0;
     height: 100%;
-    background: #03a9f4;
+    background: #62929E;
 }
+/* ---Interest section---switch on if section is place at the bottom of professional skills */
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.interest ul li {
+    list-style: none;
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interest ul li .fa {
+    color: #C6C5B9;
+    font-size: 18px;
+    margin-right: 5px;
+    width: 20px;
+}
+
+.interest_1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
 /* --end of left side--- */
 
 
 /* ---Right Side start Here--- */
 .wrapper .right_side {
     position: relative;
-    background-color: #fff;
+    background-color: #FDFDFF;
     padding: 40px;
 }
 
@@ -170,7 +207,7 @@ body {~
 }
 
 .title2 {
-    color: #003147;
+    color: #546A7B;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -207,6 +244,14 @@ p {
 }
 
 /* --skill section-- */
+/* .skills_wrapper {
+    background-color: #081921;
+    background-image: url(/Online_Portfolio/img/fog_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:15px
+} */
+
 .skills .box {
     position: relative;
     width: 100%;
@@ -233,13 +278,14 @@ p {
     top: 0;
     left: 0;
     height: 100%;
-    background: #03a9f4;
+    background: #62929E;
 }
 
-/* ---interest section--- */
-.interest ul {
+/* ---interest section--- switch on if the interest section is not at the left side---*/ 
+/* .interest ul {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
 }
 
 .interest ul li {
@@ -250,11 +296,16 @@ p {
 }
 
 .interest ul li .fa {
-    color: #03a9f4;
+    color: #8f8e87;
     font-size: 18px;
     margin-right: 5px;
     width: 20px;
 }
+
+.interest_1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+} */
 
 /* ---end of right side--- */
 
@@ -270,6 +321,11 @@ p {
     {
         margin: 10px;
         grid-template-columns: 1fr;
+    }
+
+    .wrapper .left_side 
+    {
+        width: auto;
     }
 
 
