@@ -444,25 +444,58 @@
 
 
 /* ---Screen Responsive Setting--- */
-  @media screen and (max-width:1000px) {
-  /* --Timeline Settings--- */  
-    .container {
-      width: 38%;
+  @media screen and (max-width:900px) {
+    body,html{
+      width: 100%;
+      height:100%;
     }
+
+    /* --Timeline Settings--- */  
+      .container {
+        width: 38%;
+      }
+    
+
+    /* ---Social Links--- */
+    .ptext .text-center{
+      margin-left: 10%;
+      width: 750px;
+    }
+
+    /* ---Nav Buttons Start Here--- */
+    .pimg1 .button button{
+      margin: 5px;
+      text-align: center;
+      width: 150px;
+    }
+    .pimg1 .button{
+      display: inline-block;
+      align-content: space-between;
+      justify-content: space-between;
+      padding-left: 45px;
+      width: 375px; 
+      left: 29%;
+    }
+    /* ---Footer Nav Buttons--- */
+    .pimg1 .button-footer button{
+      margin: 5px;
+      text-align: center;
+      width: 150px;
+    }
+
+    .pimg1 .button-footer{
+      display: inline-block;
+      align-content: space-between;
+      justify-content: space-between;
+      padding-left: 45px;
+      width: 375px; 
+      left: 29%;
+      left: 29%;
+      top: 20%;
+    }
+    /* ---End of Nav Buttons--- */
   }
 
-  /* ---Social Links--- */
-  .ptext .text-center{
-    margin-left: 22%;
-    width: 750px;
-  }
-
-  /* ---Footer-Nav Buttons---- */
- 
-
-  /* ---End of Nav Buttons--- */
-
-  
   @media screen and (max-width:600px) {
     .container {
       width: 75%;
@@ -472,6 +505,32 @@
       margin-left: 2%;
       width: 400px;
     }
+
+    /* ---Nav Buttons Start Here--- */
+    .pimg1 .button button{
+      display: inline-block;
+      margin: 5px;
+      text-align: center;
+      width: 250px;
+    }
+    .pimg1 .button{
+      width: 260px;
+      left: 29%;
+    }
+    /* ---Footer Nav Buttons--- */
+    .pimg1 .button-footer button{
+      display: inline-block;
+      margin: 5px;
+      text-align: center;
+      width: 250px;
+    }
+
+    .pimg1 .button-footer{
+      width: 260px;
+      left: 29%;
+      top: 20%;
+    }
+    /* ---End of Nav Buttons--- */
   }
 
   @media screen and (max-width:400px) {
@@ -490,30 +549,30 @@
       margin-left: 0;
       width: 200px;
     }
- /* ---Nav Buttons Start Here--- */
- .pimg1 .button button{
-  display: inline-block;
-  margin: 5px;
-  text-align: center;
-  width: 250px;
-}
-.pimg1 .button{
-  width: 260px;
-  left: 13.5%;
-}
-/* ---Footer Nav Buttons--- */
-.pimg1 .button-footer button{
-  display: inline-block;
-  margin: 5px;
-  text-align: center;
-  width: 250px;
-}
+    /* ---Nav Buttons Start Here--- */
+    .pimg1 .button button{
+      display: inline-block;
+      margin: 5px;
+      text-align: center;
+      width: 250px;
+    }
+    .pimg1 .button{
+      width: 260px;
+      left: 13.5%;
+    }
+    /* ---Footer Nav Buttons--- */
+    .pimg1 .button-footer button{
+      display: inline-block;
+      margin: 5px;
+      text-align: center;
+      width: 250px;
+    }
 
-.pimg1 .button-footer{
-  width: 260px;
-  left: 13.5%;
-  top: 20%;
-}
-/* ---End of Nav Buttons--- */
+    .pimg1 .button-footer{
+      width: 260px;
+      left: 13.5%;
+      top: 20%;
+    }
+    /* ---End of Nav Buttons--- */
 
-}
+  }
