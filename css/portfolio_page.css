@@ -9,7 +9,7 @@
 .container {
     height: 100vh;
     width: 100%;
-    background: url(https://source.unsplash.com/3000x3000/?foggy);
+    background: url(https://source.unsplash.com/3000x3000/?minimalist);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -52,6 +52,10 @@ nav ul li a {
     z-index: 1;
 }
 
+nav ul li a:hover{
+    color: #fff;
+}
+
 nav ul li a::after {
     content: "";
     width: 0%;
@@ -60,7 +64,8 @@ nav ul li a::after {
     top: 0;
     left: 0;
     border-radius: 20px;
-    background-color: #C8EBB1;
+    background-color: #5c5858;
+    color: #494234;
     z-index: -1;
     transition: 0.5s;
 }
@@ -70,12 +75,37 @@ nav ul li a:hover::after{
 }
 /* ---end of navbar--- */
 
+/* ---swiper image  slide */
+.swiper {
+    background: #5c5858;
+    width: 200px;
+    height: 400px;
+    position: relative;
+    left: 0;
+    bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: flex;
+    width: 100%;
+}
+
+/* --end of slide */
+
 
 /* ---Main Content--- */
 .main-content {
+    display: inline-block;
     width: 60%;
+    height: 350px;
     padding-top: 100px;
     margin-left: 3rem;
+    margin-top: 15%;
     display: flex;
     align-items: center;
     justify-content: space-around;   
@@ -83,6 +113,10 @@ nav ul li a:hover::after{
 
 .img-slider,.main-text {
     flex-basis: 50%;
+}
+
+.main-text{
+    padding-left: 15px;
 }
 
 /* img {
@@ -106,16 +140,26 @@ nav ul li a:hover::after{
     letter-spacing: 1px;
 }
 
+.main-content .logo {
+    width: 250px;
+    height: 50px;
+}
 .main-content button {
     margin-top: 2.5rem;
     outline: none;
     border: none;
     font-size: 18px;
     padding: 0.5rem 2.5rem 0.5rem 1rem;
-    border-radius: 0 50% 50% 0;
+    border-radius: 0;
     background-color: #494234;
     color: #fff;
     cursor: pointer;
+}
+
+.main-content .main-text a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
 }
 
 /* ---swiper slide */
@@ -192,7 +236,7 @@ nav ul li a:hover::after{
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #C8EBB1;
+    background-color: #494234;
     display: inline-flex;
     align-items: center;
     transition: 0.5s;

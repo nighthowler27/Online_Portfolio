@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <title>Portfolio</title>
 
-    <link
-      rel="stylesheet" 
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
 
     <link rel="stylesheet" href="../css/portfolio_page.css">
 
@@ -42,21 +45,34 @@
         <div class="main-content">
 
             <!-- Swiper -->
-            <div class="image-slider">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/Online_Portfolio/img/eaglescout_custom_2011.jpg" alt="img.jpg"></div>
-                        <div class="swiper-slide"><img src="/Online_Portfolio/img/eaglescout_youthpatch_g.jpg" alt="img.jpg"></div>
-                        <div class="swiper-slide"><img src="/Online_Portfolio/img/eaglescout_youthpatch_g1992.jpg" alt="img.jpg"></div>
+            <div class="swiper mySwiper swiper-h img-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://source.unsplash.com/2000x2000/?creative" alt="creative.jpg"></div>
+                    <div class="swiper-slide">
+                        <div class="swiper mySwiper2 swiper-v" style="width: 500px; height: 700px; top: 5px;">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="https://source.unsplash.com/2000x2000/?photography" alt="photo.jpg"></div>
+                                <div class="swiper-slide"><img src="https://source.unsplash.com/2000x2000/?portrait" alt="creative.jpg"></div>
+                                <div class="swiper-slide"><img src="https://source.unsplash.com/2000x2000/?production" alt="creative.jpg"></div>
+                                <div class="swiper-slide"><img src="https://source.unsplash.com/2000x2000/?miniscule" alt="creative.jpg"></div>
+                                <div class="swiper-slide"><img src="https://source.unsplash.com/2000x2000/?webdev" alt="creative.jpg"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
+                    <div class="swiper-slide"><img src="https://source.unsplash.com/2000x2000/?3d" alt="3d.jpg"></div>
+                    <div class="swiper-slide"><img src="https://source.unsplash.com/2000x2000/?animation" alt="animation.jpg"></div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
+            <!-- end of swiper -->
 
             <div class="main-text">
 
-                <h1>CABS Creative Studio</h1>
+                <!-- <h1>CABS Creative Studio</h1> -->
+                <img src="/img/final Logo (2).png" alt="cabslogo.png" class="logo">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nulla sunt at necessitatibus animi quidem.</p>
-                <button>Know More</button>
+                <button><a href="service.html">Hire Me</a></button>
             </div>
         </div>
 
@@ -101,15 +117,26 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper =new Swiper(",.mySwiper",{
-            slidesPreview:1,
-            spaceBetween: 30,
-            loop:true,
-        });
-    </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      direction: "vertical",
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>
