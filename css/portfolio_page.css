@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
+    user-select: none;
 }
 
 .container {
@@ -50,6 +51,11 @@ nav ul li a {
     color: #494234;
     position: relative;
     z-index: 1;
+}
+
+nav ul span a {
+    text-decoration: none;
+    color: #494234;
 }
 
 nav ul li a:hover{
@@ -231,15 +237,25 @@ nav ul li a:hover::after{
     background-color: #494234;
 }
 
-.social-links i {
-    margin-left: 10px;
+.social-links a i{
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin-left: 15px;
+    padding-left: 6px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #494234;
+    background-color: #82817f;
     display: inline-flex;
     align-items: center;
     transition: 0.5s;
+}
+
+i {
+    width: 50px;
+    height: 50px;
 }
 
 .social-links i:hover {
