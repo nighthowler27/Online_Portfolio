@@ -221,10 +221,11 @@
     color: #fff;
   }
 
-  .pimg1 .button{
+  .pimg1 .ptext .button{
     position: absolute;
-    top: 60%;
-    left: 37.5%;
+    top: 90%;
+    left: 33.8%;
+    margin-top: 50px;
   }
 
     /* ---Footer Nav Buttons--- */
@@ -538,63 +539,8 @@
 
 /* ------QUERY---------- */
 /* ---Screen Responsive Setting--- */
-@media screen and (max-width:2000px) {
-  body,html{
-    width: 100%;
-    height:100%;
-  }
 
-  /* ---intro section--- */
-  .bio-profile {
-    display: block;
-  }
-  
-  /* --Timeline Settings--- */  
-    .container {
-      width: 38%;
-    }
-  
-
-  /* ---Social Links--- */
-  .ptext .text-center{
-    margin-left: 10%;
-    width: 750px;
-  }
-
-  /* ---Nav Buttons Start Here--- */
-  .pimg1 .button button{
-    margin: 5px;
-    text-align: center;
-    width: 150px;
-  }
-  .pimg1 .button{
-    display: inline-block;
-    align-content: space-between;
-    justify-content: space-between;
-    padding-left: 45px;
-    width: 375px; 
-    left: 29%;
-  }
-  /* ---Footer Nav Buttons--- */
-  .pimg1 .button-footer button{
-    margin: 5px;
-    text-align: center;
-    width: 150px;
-  }
-
-  .pimg1 .button-footer{
-    display: inline-block;
-    align-content: space-between;
-    justify-content: space-between;
-    padding-left: 45px;
-    width: 375px; 
-    left: 29%;
-    left: 29%;
-    top: 20%;
-  }
-  /* ---End of Nav Buttons--- */
-}
-  @media screen and (max-width:1000px) {
+  @media screen and (max-width:1001px) {
     body,html{
       width: 100%;
       height:100%;
