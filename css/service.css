@@ -168,3 +168,225 @@ nav {
     background-color: #10564F;
 }
 
+/* ---Start of About Styling--- */
+/* ---End of About Styling--- */
+
+/* ---Start of Services&Pricing Styling--- */
+/* ---End of Services&Pricing Styling--- */
+
+/* ---Start of Contact Styling--- */
+.contactUs {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    padding: 40px;
+}
+
+.contactUs .contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+
+}
+
+.contactUs .contact-title h2 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.form {
+    grid-area: form;
+}
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.contact {
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+.contact-box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map"
+    ;
+    grid-gap: 10px;
+    margin-top: 5px;
+}
+
+    /* form */
+.form {
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50 {
+    display: flex;
+    gap: 10px;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox {
+    width: 100%;
+}
+
+.inputBox span {
+    color: #10564F;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.inputBox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize:none;
+    min-height: 165px;
+    margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"] {
+    background: #ff578b;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+}
+
+.inputBox ::placeholder {
+    color:  #999;
+}
+    /* Info */
+.info {
+    background: #10564F;
+}
+
+.info h3 {
+    color: #fff;
+}
+
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #158378;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infoBox div i {
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+    margin: 8px;
+}
+
+.info .infoBox div p {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.info .infoBox div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.socmed {
+    margin-top: 40px;
+    display: flex;
+}
+
+.socmed li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.socmed li a {
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+.socmed li a:hover {
+    color: #fff;
+}
+
+.map {
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* responsiveness */
+@media screen and (max-width: 991px){
+.contactUs{
+    padding: 20px;
+}
+
+.contact-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "form"
+    "info"
+    "map"
+    ;
+}
+
+.map {
+    min-height: 300px;
+}
+
+.formBox .row50 {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+}
+
+.inputBox {
+
+    width: 100%;
+}
+
+}
+
+/* ---End of Contact Styling--- */
